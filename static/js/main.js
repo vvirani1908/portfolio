@@ -14,10 +14,12 @@
     return;
   }
 
-  let cx = 0, cy = 0;
+  /* Hide until first mouse move so it doesn't flash at 0,0 */
+  el.style.opacity = '0';
+
   window.addEventListener('mousemove', e => {
-    cx = e.clientX; cy = e.clientY;
-    el.style.transform = `translate(${cx - 6}px, ${cy - 6}px)`;
+    el.style.transform = `translate(${e.clientX - 6}px, ${e.clientY - 6}px)`;
+    el.style.opacity = '1';
   }, { passive: true });
 
   document.querySelectorAll('a, button, summary, input, textarea, [role="button"]').forEach(node => {
