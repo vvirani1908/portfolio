@@ -1,0 +1,136 @@
+{
+  "personal": {
+    "name": "Vansh Virani",
+    "title": "Software Engineer",
+    "summary": "Software Engineer and incoming Data Science graduate student at SJSU with expertise in architecting scalable backend services and cloud-native ML pipelines. Proficient in building RAG systems, distributed model monitoring, and full-stack applications. Demonstrated success deploying production-grade solutions within Agile environments.",
+    "email": "viranivansh10@gmail.com",
+    "phone": "(669) 247-9407",
+    "location": "San Francisco, CA",
+    "linkedin": "https://linkedin.com/in/vanshvirani",
+    "github": "https://github.com/vanshvirani",
+    "roles": ["Software Engineer", "ML & AI Engineer", "Backend Architect", "Full-Stack Developer"]
+  },
+
+  "education": [
+    {
+      "degree": "M.S., Software Engineering",
+      "specialization": "Specialization: Data Science",
+      "school": "San Jose State University",
+      "short": "SJSU",
+      "duration": "Aug 2026 – Aug 2028",
+      "status": "Incoming Graduate Student",
+      "gpa": null,
+      "honors": [],
+      "coursework": ["Data Mining (CMPE 255)", "Machine Learning (CMPE 257)", "Deep Learning (CMPE 258)", "Software Systems Engineering (CMPE 202)"],
+      "highlight": true
+    },
+    {
+      "degree": "B.S., Computer Science",
+      "specialization": null,
+      "school": "San Francisco State University",
+      "short": "SFSU",
+      "duration": "Aug 2021 – Aug 2025",
+      "status": "Graduated",
+      "gpa": "3.11",
+      "honors": ["Dean’s List — Fall 2023", "Spring 2024", "Fall 2024", "Winter 2025"],
+      "coursework": ["Data Structures & Algorithms", "Deep Learning", "Software Engineering", "Operating Systems", "Probability & Statistics", "Linear Algebra"],
+      "highlight": false
+    }
+  ],
+
+  "projects": [
+    {
+      "index": "01",
+      "title": "GoldenPath",
+      "subtitle": "Full-Stack Tutoring Platform",
+      "description": "Collaborated in a cross-functional Agile team of 7 to design, build, and deploy a tutoring platform serving 30,000+ users — contributing across the full software development lifecycle.",
+      "tech": ["Python", "Django", "MySQL", "AWS EC2", "Apache", "Splunk", "Google Analytics"],
+      "bullets": [
+        "Designed a scalable relational DB schema with Django ORM and denormalization, enabling sub-second API response times",
+        "Deployed on AWS EC2 with Apache for high-availability infrastructure supporting concurrent user sessions",
+        "Implemented secure RESTful APIs with campus-domain email auth and password hashing",
+        "Integrated Splunk logging and Google Analytics for observability and data-driven debugging"
+      ],
+      "github": "",
+      "live": "",
+      "stat": "30,000+ users"
+    },
+    {
+      "index": "02",
+      "title": "Savaalish",
+      "subtitle": "Generative AI Simulation Pipeline",
+      "description": "Cloud-native data pipeline evaluating generative AI model behaviour through automated knowledge-task simulations with a production-ready RAG engine.",
+      "tech": ["Python", "FastAPI", "LangChain", "FAISS", "RAG"],
+      "bullets": [
+        "Engineered token-aware chunking and FAISS vector retrieval for production-ready RAG pipeline",
+        "Built RESTful APIs for reproducible experimentation following microservices design patterns",
+        "Architected modular pipeline orchestration for automated knowledge-task simulations"
+      ],
+      "github": "",
+      "live": "",
+      "stat": "RAG + LLM"
+    },
+    {
+      "index": "03",
+      "title": "Skin Cancer Classifier",
+      "subtitle": "Cloud-Native ML Pipeline",
+      "description": "CNN-based dermatoscopic image classifier deployed on Kubernetes with full MLOps observability — ResNet and EfficientNet with transfer learning on imbalanced datasets.",
+      "tech": ["Python", "PyTorch", "Docker", "Kubernetes", "Prometheus", "Grafana"],
+      "bullets": [
+        "Containerised and orchestrated training/inference workloads on Kubernetes for scalable distributed experiments",
+        "Applied transfer learning and cross-validation for model generalisation on imbalanced datasets",
+        "Integrated Prometheus + Grafana for GPU utilisation and model drift monitoring"
+      ],
+      "github": "",
+      "live": "",
+      "stat": "40% better traceability"
+    },
+    {
+      "index": "04",
+      "title": "Gator Goods",
+      "subtitle": "Campus Marketplace SPA",
+      "description": "End-to-end e-commerce single-page application for SFSU students to list and purchase items with real-time order tracking and optimised SQL performance.",
+      "tech": ["React", "Node.js", "Express", "MySQL"],
+      "bullets": [
+        "Optimised SQL query performance by 35% through indexed schemas and debounced search filters",
+        "Built RESTful APIs enabling listing management, order processing, and real-time status tracking",
+        "Led version control and code review practices, enforcing branching strategy across the team"
+      ],
+      "github": "",
+      "live": "",
+      "stat": "35% faster queries"
+    }
+  ],
+
+  "skills": {
+    "Languages": ["Python", "Java", "Kotlin", "TypeScript", "JavaScript (ES6)", "SQL", "HTML5", "CSS3", "Bash/Shell"],
+    "Frameworks": ["Django", "FastAPI", "Flask", "Spring Boot", "React", "Node.js", "Express.js", "LangChain", "PyTorch"],
+    "Cloud & DevOps": ["AWS (EC2, S3, Lambda)", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "CI/CD"],
+    "Databases": ["MySQL", "PostgreSQL", "MongoDB", "Redis", "FAISS"],
+    "AI / ML": ["Generative AI", "LLMs", "RAG Pipelines", "Prompt Engineering", "Transfer Learning", "CNNs"],
+    "Observability": ["Splunk", "Grafana", "Prometheus", "Datadog", "Google Analytics"],
+    "Tools & Practices": ["Agile/Scrum", "REST APIs", "Microservices", "TDD", "Git", "JUnit", "Postman"]
+  },
+
+  "certificates": [
+    {
+      "name": "Generative AI Professional",
+      "full": "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+      "issuer": "Oracle Cloud Infrastructure",
+      "year": "2025"
+    },
+    {
+      "name": "AI Foundations Associate",
+      "full": "Oracle Cloud Infrastructure 2025 — AI Foundations Associate",
+      "issuer": "Oracle Cloud Infrastructure",
+      "year": "2025"
+    }
+  ],
+
+  "stats": [
+    {"label": "GPA", "value": "3.11"},
+    {"label": "Dean’s List", "value": "4×"},
+    {"label": "Users Served", "value": "30k+"},
+    {"label": "Projects", "value": "4+"}
+  ]
+}
