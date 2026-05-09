@@ -126,7 +126,7 @@
   setTimeout(tick, 500);
 })();
 
-/* ── Contact form (demo — wire to any backend) ───── */
+/* ── Contact form — Formspree ────────────────────── */
 (function initForm() {
   const form   = document.getElementById('contact-form');
   const btn    = document.getElementById('send-btn');
@@ -137,18 +137,39 @@
     e.preventDefault();
     btn.disabled    = true;
     btn.textContent = 'Sending…';
+    status.textContent = '';
 
-    /* Simulate a send — replace with fetch('/api/contact', ...) */
-    await new Promise(r => setTimeout(r, 1400));
+    const data = {
+      name:    document.getElementById('f-name').value,
+      email:   document.getElementById('f-email').value,
+      message: document.getElementById('f-msg').value,
+    };
 
-    btn.textContent  = '✓ Sent!';
-    status.textContent = 'Thanks! I\'ll get back to you within 24 hours.';
-    form.reset();
+    try {
+      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body:    JSON.stringify(data),
+      });
 
-    setTimeout(() => {
-      btn.disabled    = false;
-      btn.textContent = 'Send Message';
-      status.textContent = '';
-    }, 4000);
+      if (res.ok) {
+        btn.textContent    = '✓ Sent!';
+        status.textContent = "Thanks! I'll get back to you within 24 hours.";
+        form.reset();
+      } else {
+        throw new Error('Failed');
+      }
+    } catch {
+      btn.textContent    = 'Send Message';
+      status.textContent = 'Something went wrong. Email me directly at viranivansh10@gmail.com';
+      status.style.color = '#ff6b6b';
+    } finally {
+      setTimeout(() => {
+        btn.disabled       = false;
+        btn.textContent    = 'Send Message';
+        status.textContent = '';
+        status.style.color = '';
+      }, 5000);
+    }
   });
 })();
